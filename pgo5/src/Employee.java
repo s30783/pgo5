@@ -5,26 +5,26 @@ public class Employee {
     String email;
     String PESEL;
     int year;
-    int salary = 3000;
 
-    public Employee(String name, String lname, String address, String email, String PESEL, int salary) {
+    public Employee(String name, String lname, String address, String email, String PESEL, int year) {
         this.name = name;
         this.lname = lname;
         this.address = address;
         this.email = email;
         this.PESEL = PESEL;
-        this.salary = salary;
+        this.year = year;
     }
 
     public void setSalary(){
-        int newSalary;
-        if(year==0) {
-            newSalary = salary;
-        } else if (year>0) {
-            newSalary = salary*year;
-        }else{
-            System.out.println("Year can't be in negative number");
+        int salary = 3000;
+        int yearsWorked = Math.max(0, getCurrentYear() - employmentYear);
+        return salary + year * 1000;
         }
+
+        private int getCurrentYear() {
+        // Implementacja zwracająca aktualny rok
+        return 2024; // Przykładowo zwracamy 2024 rok
+    }
     }
 }
 
