@@ -17,14 +17,12 @@ public class Employee {
 
     public void setSalary(){
         int salary = 3000;
-        int yearsWorked = Math.max(0, getCurrentYear() - employmentYear);
+        int yearsWorked = Math.max(0, getCurrentYear() - year);
         return salary + year * 1000;
         }
 
         private int getCurrentYear() {
-        // Implementacja zwracająca aktualny rok
-        return 2024; // Przykładowo zwracamy 2024 rok
+        return 2024; 
     }
     }
-}
 
