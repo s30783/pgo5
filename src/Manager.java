@@ -13,7 +13,7 @@ public class Manager extends Employee {
     }
 
     public double calculateSalary() {
-        double baseSalary = super.setSalary();
+        double baseSalary = super.calculateSalary();
         double bonus = 0;
         for (Goal goal : goals) {
             if (goal.isAchieved()) {
