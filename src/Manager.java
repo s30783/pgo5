@@ -8,7 +8,7 @@ public class Manager extends Employee {
         this.goals = new ArrayList<>();
     }
 
-    public void addGoal(Goal goal) {
+    public void addGoals(Goal goal) {
         goals.add(goal);
     }
 
