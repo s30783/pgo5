@@ -13,7 +13,7 @@ public class Tester extends Employee {
     }
 
     public double calculateSalary() {
-        double baseSalary = super.setSalary();
+        double baseSalary = super.calculateSalary();
         return baseSalary + testTypes.size() * 300;
     }
 }
