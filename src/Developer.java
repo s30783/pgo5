@@ -13,7 +13,7 @@ class Developer extends Employee {
     }
 
     public double calculateSalary() {
-        double baseSalary = super.setSalary();
+        double baseSalary = super.calculateSalary();
         double bonus = 0;
         for (Technology tech : technologies) {
             bonus += tech.getBonus();
