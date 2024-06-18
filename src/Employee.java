@@ -1,5 +1,5 @@
 import java.math.BigDecimal;
-
+import java.time.Year;
 public class Employee {
     String name;
     String lname;
@@ -17,13 +17,10 @@ public class Employee {
         this.year = year;
     }
 
-    public double setSalary(){
+    public double calculateSalary(){
         double salary = 3000;
-        int yearsWorked = Math.max(0, getCurrentYear() - year);
-        return salary + year * 1000;
+        int yearsWorked = Year.now().getValue() - year;
+        return salary + yearsWorked * 1000;
     }
 
-    private int getCurrentYear() {
-        return 2024;
-    }
 }
